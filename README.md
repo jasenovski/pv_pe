@@ -18,7 +18,7 @@ cruzamento_retas/
 
 O projeto resolve o problema de **detecção de cruzamento entre segmentos de reta**, especificamente:
 
-1. **Reta Fixa (Contador)**: Um segmento vertical que atua como "linha de contagem"
+1. **Reta Fixa (Contador)**: Um segmento que atua como "linha de contagem"
 2. **Retas Móveis (Andante)**: Segmentos formados pelo movimento de um objeto
 3. **Detecção**: Identificar quando as retas se cruzam
 4. **Classificação**: Determinar a direção do cruzamento (A→B ou B→A)
@@ -145,58 +145,3 @@ from itertools import pairwise  # Pareamento de pontos consecutivos
 - **Visualização**: Animação mostrando movimento e linha contador
 - **Console**: Mensagens indicando cruzamentos e direções
 - **Classificação**: "cruzou A→B" ou "cruzou B→A"
-
-## Aplicações Práticas
-
-### Sistemas de Contagem
-- **Pessoas**: Contagem de pedestres em entradas/saídas
-- **Veículos**: Monitoramento de tráfego
-- **Objetos**: Controle de fluxo em esteiras
-
-### Análise de Movimento
-- **Comportamento**: Padrões de movimento em espaços
-- **Segurança**: Detecção de movimentos suspeitos
-- **Logística**: Otimização de fluxos
-
-### Visão Computacional
-- **Tracking**: Rastreamento de objetos
-- **Calibração**: Validação de sistemas de detecção
-- **ROI**: Análise de regiões de interesse
-
-## Vantagens do Algoritmo
-
-1. **Precisão Matemática**: Baseado em álgebra linear rigorosa
-2. **Eficiência**: Complexidade O(1) por verificação
-3. **Robustez**: Trata casos especiais (retas paralelas)
-4. **Direcionamento**: Distingue sentido do cruzamento
-5. **Generalização**: Funciona para qualquer orientação de retas
-
-## Limitações
-
-- Funciona apenas com segmentos de reta (não curvas)
-- Requer pontos bem definidos da trajetória
-- Sensível a ruído nos dados de entrada
-- Assume movimento linear entre pontos consecutivos
-
-## Melhorias Futuras
-
-- Suporte para múltiplas linhas contador
-- Filtros para redução de ruído
-- Interface gráfica interativa
-- Integração com sistemas de câmeras em tempo real
-- Exportação de estatísticas de cruzamento
-
-## Conceitos Abordados
-
-- **Álgebra Linear**: Sistemas de equações, matrizes, vetores
-- **Geometria Analítica**: Intersecção de retas, produtos escalares
-- **Processamento de Imagem**: Visualização, OpenCV
-- **Análise de Movimento**: Trajetórias, segmentação temporal
-
-## Autores
-
-Projeto desenvolvido como parte do curso de Modelos e Métodos para Análise Preditiva.
-
-## Licença
-
-Este projeto é destinado a fins educacionais e de pesquisa.
